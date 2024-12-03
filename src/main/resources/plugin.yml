@@ -1,0 +1,27 @@
+name: CEconomy
+version: 1.0-SNAPSHOT
+main: org.ch4rlesexe.cEconomy.CEconomy
+api-version: 1.21
+author: YourName
+description: A player-driven economy plugin with stocks, banking, and shops.
+
+commands:
+  economy:
+    description: Main command for interacting with the economy system.
+    usage: /economy <stocks|balance|buy|sell>
+    aliases: [eco]
+    permission: economy.use
+
+permissions:
+  economy.use:
+    description: Allows a player to use the /economy command.
+    default: true
+
+  economy.admin:
+    description: Grants access to admin economy commands.
+    default: op
+
+  admin:
+    description: Admin commands for managing the economy system.
+    usage: /economy admin <addstock|removestock|setbalance>
+    permission: economy.admin

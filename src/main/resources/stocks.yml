@@ -1,0 +1,7 @@
+stocks:
+  - name: Iron
+    value: 100.0
+  - name: Gold
+    value: 200.0
+  - name: Diamond
+    value: 500.0
